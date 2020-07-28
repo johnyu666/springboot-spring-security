@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource #默认的连接池
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test3
+    username: root
+    password: 123
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
